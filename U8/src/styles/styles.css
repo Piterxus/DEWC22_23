@@ -1,27 +1,12 @@
-#app {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  .grade{
-    height: 100px;
-    flex-grow: 1;
-    border: 1px solid;
-  }
-
-  .squares {
+/* .squares {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100%;
    }
-   .square {
+.square {
     height: 100px;
     flex-grow: 1;
-   }
+   } */
    

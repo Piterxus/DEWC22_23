@@ -3,14 +3,8 @@ import './styles/app.css'
 
 function App() {
   return (
-  
-   
-   
-     
-    
-    <Gradient hue={23} saturation={100} number={7}/>
- 
-  )
+  <Gradient hue={23} saturation={100} number={5}/>
+ )
 }
 
 export default App
