@@ -9,7 +9,7 @@ function Gradient(props) {
         intervals += interval
        
         }
-  console.log(numbers)
+
    
     const listItems = numbers.map((num) =>
         <div key={num} className='square' style={{ backgroundColor: `hsl(${hue},${saturation}%,${num}%)` }}></div>
