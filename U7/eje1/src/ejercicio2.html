@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+  list-style: none;
+}
+
+/* ul li:before {
+  content: '✓';
+} */
+    </style>
     <title>Ejercicio 2 U7</title>
 </head>
 <body>
-    <h1>EJERCICIO 2</h1>
+    <h1>LISTA DE TAREAS</h1>
+   
+        <label for="tarea">Tarea:</label>
+        <input type="text" name="tarea" id="tarea"><br><br>
+        
+  
+    <button onclick=añadir()>AÑADIR</button>
+    <ul id="tareas">
+
+    </ul>
 </body>
 </html>
