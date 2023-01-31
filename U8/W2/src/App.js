@@ -1,7 +1,5 @@
 import PokeData from './PokeData'
 
-
-
 function App() {
     return (
     <>
