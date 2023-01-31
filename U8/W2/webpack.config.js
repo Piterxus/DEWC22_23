@@ -11,11 +11,7 @@ const stylesHandler = 'style-loader';
 
 
 const config = {
-    entry: {
-        index: path.resolve(__dirname, 'src', 'index.js'),
-        ejercicio2: path.resolve(__dirname, 'src', 'ejercicio2.js'),
-        ejercicio3: path.resolve(__dirname, 'src', 'ejercicio3.js')
-    },
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -25,20 +21,8 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: path.resolve(__dirname, 'src', 'index.html'),
-            chunks: ['index']
+            template: 'index.html',
         }),
-        new HtmlWebpackPlugin({
-            filename: 'ejercicio2.html',
-            template:  path.resolve(__dirname, 'src', 'ejercicio2.html'),
-            chunks: ['ejercicio2']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ejercicio3.html',
-            template: path.resolve(__dirname, 'src', 'ejercicio3.html'),
-            chunks: ['ejercicio3']
-        })
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/

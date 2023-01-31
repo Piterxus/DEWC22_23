@@ -13,8 +13,8 @@ const stylesHandler = 'style-loader';
 const config = {
     entry: {
         index: path.resolve(__dirname, 'src', 'index.js'),
-        ejercicio2: path.resolve(__dirname, 'src', 'ejercicio2.js'),
-        ejercicio3: path.resolve(__dirname, 'src', 'ejercicio3.js')
+        nieve: path.resolve(__dirname, 'src', 'nieve.js'),
+        confetti: path.resolve(__dirname, 'src', 'confetti.js')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -30,14 +30,14 @@ const config = {
             chunks: ['index']
         }),
         new HtmlWebpackPlugin({
-            filename: 'ejercicio2.html',
-            template:  path.resolve(__dirname, 'src', 'ejercicio2.html'),
-            chunks: ['ejercicio2']
+            filename: 'nieve.html',
+            template: path.resolve(__dirname, 'src', 'nieve.html'),
+            chunks: ['nieve']
         }),
         new HtmlWebpackPlugin({
-            filename: 'ejercicio3.html',
-            template: path.resolve(__dirname, 'src', 'ejercicio3.html'),
-            chunks: ['ejercicio3']
+            filename: 'confetti.html',
+            template: path.resolve(__dirname, 'src', 'confetti.html'),
+            chunks: ['confetti']
         })
 
         // Add your plugins here
