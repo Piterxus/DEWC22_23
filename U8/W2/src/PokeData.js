@@ -1,4 +1,4 @@
-import useGetPokemon from "./useGetPokemon";
+import {useGetPokemon} from "./useGetPokemon";
 import Loading from './Loading'
 import './styles/pokedata.css'
 import './styles/loader.css'

@@ -1,4 +1,4 @@
-import getSpeciesSprite from "./pokeImg";
+import { getSpeciesSprite, getPokemonData } from "./pokeImg";
 import { useEffect, useState } from "react"
 
 function useGetPokemon(id) {
@@ -21,4 +21,24 @@ function useGetPokemon(id) {
     return { data, loading }
 }
 
-export default useGetPokemon;
+function useGetPokemonAllData() {
+    const [allData, setData] = useState(getPokemonData)
+
+    useEffect(
+        () => {
+            async function allData() {
+
+
+                setData(await getPokemonData())
+
+
+            }
+            allData()
+        }, []
+    )
+
+   return allData
+
+}
+
+export { useGetPokemon, useGetPokemonAllData };

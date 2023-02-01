@@ -1,9 +1,11 @@
 import PokeData from './PokeData'
+import PokeForm from './PokeForm'
 
 function App() {
     return (
     <>
-    <PokeData id={400}></PokeData>
+    <PokeData id={410}></PokeData>
+    <PokeForm></PokeForm>
 
     </>
    )

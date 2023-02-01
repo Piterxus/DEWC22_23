@@ -1,11 +1,24 @@
+import {useGetPokemonAllData} from "./useGetPokemon";
+
 const DEFAULT_LANGUAGE = '7' // Español
 
 function pokemonsInLanguage(pokemons, language) {
   return pokemons.filter(pokemon => pokemon.local_language_id === language)
 }
 
-function PokeForm(props) {
+// const listItems = numbers.map((num) =>
+// <div key={num} className='square' style={{ backgroundColor: `hsl(${hue},${saturation}%,${num}%)` }}></div>
+// );
 
+
+
+function PokeForm(props) {
+  const dataListValues = useGetPokemonAllData().results
+const dataListValuesMap= dataListValues.map(
+  (values)=> <option value={values}></option>
+)
+  
+console.log('->',useGetPokemonAllData().results)
   return (
     <div>
       <h2>PokeForm</h2>
@@ -15,7 +28,7 @@ function PokeForm(props) {
           <input type="text" name="name" list="pokemons"/>
         </label>
         <datalist id="pokemons">
-           { /* Your code here */ }
+          {dataListValuesMap}
         </datalist>
         <label>
           Lenguaje
